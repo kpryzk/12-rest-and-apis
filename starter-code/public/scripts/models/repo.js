@@ -21,6 +21,7 @@ var app = app || {};
 .then(
   data => {
     console.log(data)
+    return repos.all = data
     $.get(data.repos_url).then(console.log)
 
     // Object.keys(data).forEach(line => $('#results').append(`
