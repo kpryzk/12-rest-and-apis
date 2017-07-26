@@ -20,13 +20,7 @@ var app = app || {};
     })
 .then(
   data => {
-    console.log(data)
-    $.get(data.repos_url).then(console.log)
-
-    // Object.keys(data).forEach(line => $('#results').append(`
-    //     <li>${line}: ${data[line]}</li>
-    //   `)
-    // )
+    return repos.all = data;
   },
   err => {
     console.error(err)
